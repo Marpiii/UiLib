@@ -7,6 +7,7 @@ local Window = OrionLib:MakeWindow({
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "MyOrionConfig"
+    Theme = "Light"
 })
 
 -- Create a tab (first tab)
