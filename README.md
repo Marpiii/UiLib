@@ -261,3 +261,43 @@ At the very end of your code, you must add:
 ```lua
 OrionLib:Init()
 ```
+
+
+## Flags
+
+Flags act as IDs for elements. They allow you to access element values anywhere in your code and are required for configs.
+```lua
+Tab:AddToggle({
+    Name = "Toggle",
+    Default = true,
+    Save = true,
+    Flag = "toggle"
+})
+
+print(OrionLib.Flags["toggle"].Value) -- prints the toggle’s value
+```
+Flags only work with: Toggle, Slider, Dropdown, Bind, and Colorpicker.
+
+
+
+## Config System
+
+To make your UI compatible with configs:
+
+Add SaveConfig = true and ConfigFolder = "NameHere" in MakeWindow
+
+Add Flag and Save = true to every element you want saved
+
+
+Configs are created per-game and auto-loaded.
+
+
+## Destroying the Interface
+```lua
+OrionLib:Destroy()
+```
+
+## Toggling the UI
+```lua
+OrionLib:ToggleUi()
+```
