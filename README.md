@@ -24,7 +24,7 @@ It provides draggable windows, animations, themes, config saving, and a full set
 Load the library into your script:
 
 ```lua
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/OrionLib/main/Orion.lua"))(
+local OrionLib = local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Qanuir/orion-ui/refs/heads/main/source"))()
 ```
 ## Creating Window
 ```lua
