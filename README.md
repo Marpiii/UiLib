@@ -1,6 +1,6 @@
 # Orion Library
 
-A clean and modern **Roblox UI Library** for exploit environments (Synapse X, Script-Ware, etc).  
+A clean and modern **Roblox UI Library** for exploit environments (Delta, Solara, etc).  
 It provides draggable windows, animations, themes, config saving, and a full set of UI elements.
 
 ---
