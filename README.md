@@ -157,27 +157,25 @@ Callback = <function> - Function called when slider changes.
 ## Change Slider Value
 ```lua
 Slider:Set(2)
+```
 
-
----
-
-Creating a Label
-
+## Creating Label
+```lua
 local CoolLabel = Tab:AddLabel("Label")
-
-Updating a Label
-
+```
+## Updating a Label
+```lua
 CoolLabel:Set("Label New!")
+```
 
 
----
-
-Creating a Paragraph
-
+## Creating Paragraph
+```lua
 local CoolParagraph = Tab:AddParagraph("Paragraph","Paragraph Content")
+```
 
-Updating a Paragraph
-
+## Updating a Paragraph
+```lua
 CoolParagraph:Set("New Title", "New Paragraph Content!")
 ```
 
@@ -223,11 +221,11 @@ Callback = <function> - Function executed when key is pressed.
 ## Changing Bind
 ```lua
 Bind:Set(Enum.KeyCode.E)
+```
 
 
-
-Creating a Dropdown
-
+## Creating Dropdown
+```lua
 local Dropdown = Tab:AddDropdown({
     Name = "Dropdown",
     Default = "1",
