@@ -472,9 +472,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
-    if WindowConfig.Theme and OrionLib.Themes[WindowConfig.Theme] then
-        OrionLib.SelectedTheme = WindowConfig.Theme
-    end
+
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
@@ -1723,5 +1721,6 @@ function OrionLib:ToggleUi()
 end
 
 return OrionLib
+
 
 
