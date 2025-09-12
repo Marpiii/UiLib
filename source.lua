@@ -19,6 +19,22 @@ local OrionLib = {
             Text = Color3.fromRGB(90,45,60),
             TextDark = Color3.fromRGB(140,90,110)
 		}
+	    Light = {
+		    Main = Color3.fromRGB(0,0,0),
+		    Second = Color3.fromRGB(0,0,0),
+		    Stroke = Color3.fromRGB(0,0,0),
+		    Divider = Color3.fromRGB(0,0,0),
+		    Text = Color3.fromRGB(0,0,0),
+		    TextDark Color3.fromRGB(140,90,110)
+		}
+		Peach = {
+			Main = Color3.fromRGB(0,0,0),
+			Second = Color3.fromRGB(0,0,0),
+			Stroke = Color3.fromRGB(0,0,0),
+			Divider = Color3.fromRGB(0,0,0),
+			Text = Color3.fromRGB(0,0,0),
+			TextDark Color3.fromRGB(0,0,0),
+		}
 	},
 	SelectedTheme = "Default",
 	Folder = nil,
@@ -469,6 +485,9 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	WindowConfig = WindowConfig or {}
 	WindowConfig.Name = WindowConfig.Name or "Orion Library"
+	if WindowConfig.Theme and OrionLib.Themes[WindowConfig.Theme] then
+    OrionLib.SelectedTheme = WindowConfig.Theme
+			end
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
@@ -1720,6 +1739,7 @@ function OrionLib:ToggleUi()
 end
 
 return OrionLib
+
 
 
 
