@@ -11,7 +11,7 @@ local OrionLib = {
 	Connections = {},
 	Flags = {},
 	Themes = {
-		Default = {
+		Peach = {
 			Main = Color3.fromRGB(255,240,245),
             Second = Color3.fromRGB(255,220,230),
             Stroke = Color3.fromRGB(255,175,200),
@@ -19,8 +19,16 @@ local OrionLib = {
             Text = Color3.fromRGB(90,45,60),
             TextDark = Color3.fromRGB(140,90,110)
 		}
+		Dark = {
+			Main = Color3.fromRGB(25,25,25),
+            Second = Color3.fromRGB(32,32,32),
+            Stroke = Color3.fromRGB(60,60,60),
+            Divider = Color3.fromRGB(60,60,60),
+            Text = Color3.fromRGB(240,240,240),
+            TextDark = Color3.fromRGB(150,150,150)
+		}
 	},
-	SelectedTheme = "Default",
+	SelectedTheme = "Dark",
 	Folder = nil,
 	SaveCfg = false
 }
@@ -1723,5 +1731,6 @@ function OrionLib:ToggleUi()
 end
 
 return OrionLib
+
 
 
