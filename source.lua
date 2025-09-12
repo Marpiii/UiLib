@@ -12,12 +12,12 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(18, 18, 28),
-            Second = Color3.fromRGB(20, 30, 45),
-            Stroke = Color3.fromRGB(80, 100, 160),
-            Divider = Color3.fromRGB(60, 70, 110),
-            Text = Color3.fromRGB(235, 240, 255),
-            TextDark = Color3.fromRGB(150, 170, 200)
+			Main = Color3.fromRGB(255,240,245),
+            Second = Color3.fromRGB(255,220,230),
+            Stroke = Color3.fromRGB(255,175,200),
+            Divider = Color3.fromRGB(255,200,210),
+            Text = Color3.fromRGB(90,45,60),
+            TextDark = Color3.fromRGB(140,90,110)
 		}
 	},
 	SelectedTheme = "Default",
@@ -1720,6 +1720,7 @@ function OrionLib:ToggleUi()
 end
 
 return OrionLib
+
 
 
 
