@@ -11,31 +11,31 @@ local OrionLib = {
 	Connections = {},
 	Flags = {},
 	Themes = {
-		Default = {
-			Main = Color3.fromRGB(255,240,245),
+        Default = {
+            Main = Color3.fromRGB(255,240,245),
             Second = Color3.fromRGB(255,220,230),
             Stroke = Color3.fromRGB(255,175,200),
             Divider = Color3.fromRGB(255,200,210),
             Text = Color3.fromRGB(90,45,60),
             TextDark = Color3.fromRGB(140,90,110)
-		}
-	    Light = {
-		    Main = Color3.fromRGB(0,0,0),
-		    Second = Color3.fromRGB(0,0,0),
-		    Stroke = Color3.fromRGB(0,0,0),
-		    Divider = Color3.fromRGB(0,0,0),
-		    Text = Color3.fromRGB(0,0,0),
-		    TextDark Color3.fromRGB(140,90,110)
-		}
-		Peach = {
-			Main = Color3.fromRGB(0,0,0),
-			Second = Color3.fromRGB(0,0,0),
-			Stroke = Color3.fromRGB(0,0,0),
-			Divider = Color3.fromRGB(0,0,0),
-			Text = Color3.fromRGB(0,0,0),
-			TextDark Color3.fromRGB(0,0,0),
-		}
-	},
+        },
+        Light = {
+            Main = Color3.fromRGB(240,240,240),
+            Second = Color3.fromRGB(255,255,255),
+            Stroke = Color3.fromRGB(200,200,200),
+            Divider = Color3.fromRGB(210,210,210),
+            Text = Color3.fromRGB(50,50,50),
+            TextDark = Color3.fromRGB(100,100,100)
+        },
+        Peach = {
+            Main = Color3.fromRGB(255,230,230),
+            Second = Color3.fromRGB(255,210,210),
+            Stroke = Color3.fromRGB(255,180,180),
+            Divider = Color3.fromRGB(255,200,200),
+            Text = Color3.fromRGB(80,40,40),
+            TextDark = Color3.fromRGB(120,70,70)
+         }
+	}
 	SelectedTheme = "Default",
 	Folder = nil,
 	SaveCfg = false
@@ -1739,6 +1739,7 @@ function OrionLib:ToggleUi()
 end
 
 return OrionLib
+
 
 
 
