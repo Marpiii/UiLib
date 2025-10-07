@@ -1,4 +1,4 @@
-# Orion Library
+# [Remake] Orion Library
 
 A clean and modern **Roblox UI Library** for exploit environments (Synapse X, Script-Ware, etc).  
 It provides draggable windows, animations, themes, config saving, and a full set of UI elements.
@@ -24,15 +24,15 @@ It provides draggable windows, animations, themes, config saving, and a full set
 Load the library into your script:
 
 ```lua
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Qanuir/orion-ui/refs/heads/main/source.lua"))()
+local MarVLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Qanuir/orion-ui/refs/heads/main/source.lua"))()
 ```
 ## Creating Window
 ```lua
-local Window = OrionLib:MakeWindow({
+local Window = MarVLib:MakeWindow({
     Name = "Title of the library",
     HidePremium = false,
     SaveConfig = true,
-    ConfigFolder = "OrionTest"
+    ConfigFolder = "MarVTest"
 })
 
 --[[
