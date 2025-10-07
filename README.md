@@ -24,7 +24,7 @@ It provides draggable windows, animations, themes, config saving, and a full set
 Load the library into your script:
 
 ```lua
-local MarVLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Qanuir/orion-ui/refs/heads/main/source.lua"))()
+local MarVLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Marpiii/UiLib/refs/heads/main/source.lua"))()
 ```
 ## Creating Window
 ```lua
