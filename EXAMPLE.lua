@@ -1,12 +1,12 @@
--- Load Orion Library
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Qanuir/orion-ui/refs/heads/main/source.lua"))()
+-- Load MarV Library
+local MarVLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Marpiii/UiLib/refs/heads/main/source.lua"))()
 
 -- Main window
-local Window = OrionLib:MakeWindow({
-    Name = "Orion Full Example",
+local Window = MarVLib:MakeWindow({
+    Name = "MarV Full Example",
     HidePremium = false,
     SaveConfig = true,
-    ConfigFolder = "MyOrionConfig"
+    ConfigFolder = "MyMarVConfig"
 })
 
 -- First Tab: Showcase of components
@@ -22,7 +22,7 @@ Tab:AddParagraph("Paragraph Title", "This is paragraph content. It can wrap text
 Tab:AddButton({
     Name = "Click Me",
     Callback = function()
-        OrionLib:MakeNotification({
+        MarVLib:MakeNotification({
             Name = "Notification",
             Content = "Button clicked!",
             Time = 4
@@ -109,4 +109,4 @@ ExpTab:AddButton({
 })
 
 -- Finalize
-OrionLib:Init()
+MarVLib:Init()
